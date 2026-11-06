@@ -1,0 +1,292 @@
+<!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="جهان‌نما؛ شریک توسعه کسب‌وکارها، از شناخت مسئله تا مشارکت در اجرا"><title>جهان‌نما | شریک توسعه کسب‌وکار</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
+    :root {
+      --navy:#14243A; --gold:#C5A66A; --ivory:#F4F1EA; --ink:#30343B;
+      --white:#fff; --muted:#747B84; --line:#E7E5E0; --soft:#EAE5DA;
+      --shadow:0 12px 34px rgba(20,36,58,.07); --radius:16px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:100px}
+    body{margin:0;background:#fff;color:var(--ink);font-family:"Vazirmatn",Tahoma,sans-serif;line-height:1.9}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    .container{width:min(1184px,calc(100% - 48px));margin-inline:auto}
+    .site-header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(20,36,58,.07)}
+    .header-inner{min-height:84px;display:flex;align-items:center;gap:28px}
+    .brand{flex:0 0 auto}
+    .brand-name{display:block;color:var(--navy);font-size:25px;font-weight:800;line-height:1.35}
+    .brand-caption{display:block;color:var(--muted);font-size:11px;font-weight:500}
+    .main-nav{display:flex;align-items:center;gap:clamp(13px,1.8vw,25px);margin-right:auto}
+    .nav-link,.dropdown-toggle{padding:12px 0;border:0;background:none;color:#414852;font-size:12px;font-weight:500;white-space:nowrap;cursor:pointer}
+    .nav-link:hover,.dropdown-toggle:hover{color:#9A7A42}
+    .dropdown{position:relative}
+    .dropdown-toggle span{color:var(--gold);padding-right:4px}
+    .dropdown-menu{display:none;position:absolute;top:calc(100% + 7px);right:-16px;width:230px;padding:9px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
+    .dropdown:hover .dropdown-menu,.dropdown:focus-within .dropdown-menu{display:block}
+    .dropdown-menu a{display:block;padding:8px 10px;border-radius:7px;font-size:12px;color:#4D535C}
+    .dropdown-menu a:hover{background:var(--ivory);color:var(--navy)}
+    .button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 21px;border-radius:8px;font-size:13px;font-weight:600;border:1px solid transparent;transition:.2s ease;cursor:pointer}
+    .button-primary{background:var(--navy);color:#fff}
+    .button-primary:hover{background:#203956;transform:translateY(-2px)}
+    .button-outline{border-color:rgba(20,36,58,.35);color:var(--navy);background:transparent}
+    .button-outline:hover{border-color:var(--gold);color:#8D6B35}
+    .button-gold{background:var(--gold);color:var(--navy)}
+    .button-gold:hover{background:#D2B77F;transform:translateY(-2px)}
+    .header-cta{min-height:43px;padding-inline:17px;font-size:12px;flex:0 0 auto}
+    .menu-toggle{display:none;width:43px;height:43px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--navy);font-size:22px;cursor:pointer}
+    .hero{background:var(--ivory);overflow:hidden}
+    .hero-inner{min-height:590px;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:58px;padding-block:72px}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;color:#987744;font-size:12px;font-weight:700}
+    .eyebrow:before{content:"";width:27px;height:1px;background:var(--gold)}
+    h1{max-width:690px;margin:17px 0 20px;color:var(--navy);font-size:clamp(37px,4.6vw,58px);font-weight:800;line-height:1.55;letter-spacing:-1.2px}
+    .hero-copy{max-width:620px;margin:0;color:#626973;font-size:16px;line-height:2.2}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+    .hero-visual{min-height:405px;position:relative;display:flex;align-items:center;justify-content:center}
+    .portrait-placeholder{width:min(100%,390px);height:440px;border-radius:190px 190px 18px 18px;background:linear-gradient(145deg,#E6E0D4,#D8D0C1);border:1px solid rgba(20,36,58,.08);display:flex;align-items:center;justify-content:center;text-align:center;padding:35px;position:relative;overflow:hidden}
+    .portrait-placeholder:before{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(20,36,58,.12);border-radius:50%;top:48px;left:50%;transform:translateX(-50%)}
+    .portrait-placeholder:after{content:"";position:absolute;width:190px;height:190px;border:1px solid rgba(197,166,106,.55);border-radius:50%;top:83px;left:50%;transform:translateX(-50%)}
+    .portrait-note{position:relative;z-index:1;color:#69717A;font-size:13px;max-width:220px}
+    .portrait-note strong{display:block;color:var(--navy);font-size:17px;margin-bottom:7px}
+    .hero-mark{position:absolute;bottom:22px;right:0;background:#fff;padding:17px 22px;border-right:3px solid var(--gold);box-shadow:var(--shadow);font-size:12px;color:var(--navy)}
+    .section{padding-block:96px}
+    .section-soft{background:#FAF9F6}
+    .section-dark{background:var(--navy);color:#fff}
+    .section-heading{max-width:690px;margin-bottom:42px}
+    .section-kicker{color:#9A7A42;font-size:12px;font-weight:700}
+    .section-heading h2{margin:8px 0 12px;color:var(--navy);font-size:clamp(27px,3vw,37px);line-height:1.6}
+    .section-heading p{margin:0;color:var(--muted);font-size:14px;line-height:2.1}
+    .section-dark .section-heading h2{color:#fff}
+    .section-dark .section-heading p{color:#C6CFD9}
+    .intro-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:70px;align-items:start}
+    .intro-label{color:#9A7A42;font-size:13px;font-weight:700}
+    .intro-title{margin:8px 0;color:var(--navy);font-size:30px;line-height:1.7}
+    .intro-text{margin:0;color:#626973;font-size:15px;line-height:2.25}
+    .philosophy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .philosophy-card{padding:28px 25px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;min-height:220px}
+    .step-number{color:var(--gold);font-family:Arial,sans-serif;font-size:13px;letter-spacing:2px}
+    .philosophy-card h3{margin:17px 0 9px;color:var(--navy);font-size:20px}
+    .philosophy-card p{margin:0;color:var(--muted);font-size:13px;line-height:2.1}
+    .worldnama{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+    .worldnama-panel{padding:38px;border-radius:18px;background:#1C304B;border:1px solid rgba(255,255,255,.1)}
+    .worldnama-panel .mini-label{color:var(--gold);font-size:12px;font-weight:700}
+    .worldnama-panel h3{font-size:29px;line-height:1.7;margin:12px 0;color:#fff}
+    .worldnama-panel p{color:#C6CFD9;font-size:14px;line-height:2.2;margin:0 0 23px}
+    .worldnama-copy h2{font-size:32px;line-height:1.7;margin:0 0 16px;color:#fff}
+    .worldnama-copy p{color:#C6CFD9;font-size:14px;line-height:2.25;margin:0 0 25px}
+    .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service-card{padding:27px 24px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;min-height:230px;transition:transform .2s,box-shadow .2s}
+    .service-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .service-index{color:#B0925A;font-size:12px;font-weight:700}
+    .service-card h3{color:var(--navy);font-size:19px;margin:15px 0 8px}
+    .service-card p{color:var(--muted);font-size:13px;line-height:2.1;margin:0}
+    .subunits{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .subunit{padding:26px;border-radius:var(--radius);background:#fff;border:1px solid var(--line)}
+    .subunit h3{color:var(--navy);font-size:19px;margin:0 0 8px}
+    .subunit p{color:var(--muted);font-size:13px;margin:0;line-height:2.1}
+    .subunit .subunit-type{color:#9A7A42;font-size:11px;font-weight:700;margin-bottom:12px;display:block}
+    .project-grid,.article-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .project-card,.article-card{padding:29px;border-radius:var(--radius);background:#fff;border:1px solid var(--line)}
+    .project-card h3,.article-card h3{margin:10px 0;color:var(--navy);font-size:20px;line-height:1.7}
+    .project-card p,.article-card p{margin:0;color:var(--muted);font-size:13px;line-height:2.1}
+    .card-label{font-size:11px;color:#9A7A42;font-weight:700}
+    .text-link{display:inline-flex;margin-top:18px;color:var(--navy);font-size:12px;font-weight:700}
+    .text-link:after{content:"←";margin-right:8px;color:var(--gold)}
+    .placeholder-note{margin-top:17px;padding:12px 15px;border-radius:9px;background:#F7F5F0;color:#777;font-size:11px}
+    .cta-band{padding:62px 0;background:var(--ivory)}
+    .cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}
+    .cta-inner h2{margin:0 0 8px;color:var(--navy);font-size:30px}
+    .cta-inner p{margin:0;color:#68717A;font-size:14px}
+    .site-footer{background:var(--navy);color:#E8ECF1;padding:62px 0 20px}
+    .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.1fr;gap:42px;padding-bottom:43px}
+    .footer-brand .brand-name{color:#fff;font-size:27px}
+    .footer-brand .brand-caption{color:#B8C2CE}
+    .footer-description{max-width:300px;margin:16px 0 0;color:#C3CCD6;font-size:12px;line-height:2.2}
+    .footer-title{margin:4px 0 17px;color:#fff;font-size:14px}
+    .footer-links,.contact-list{display:grid;gap:10px}
+    .footer-links a,.contact-line{color:#C3CCD6;font-size:12px}
+    .footer-links a:hover{color:var(--gold)}
+    .footer-bottom{min-height:58px;border-top:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:space-between;color:#AEB9C6;font-size:11px}
+    .footer-signature{color:var(--gold);font-family:Arial,sans-serif;letter-spacing:1.5px;direction:ltr}
+    @media(max-width:1000px){
+      .header-inner{gap:15px}.main-nav{gap:11px}.nav-link,.dropdown-toggle{font-size:11px}
+      .footer-grid{grid-template-columns:1.2fr 1fr 1fr}.footer-contact{grid-column:1/-1}
+      .hero-inner{gap:30px}
+    }
+    @media(max-width:760px){
+      .container{width:min(100% - 36px,600px)}
+      .header-inner{min-height:72px;gap:12px}
+      .brand-name{font-size:22px}
+      .menu-toggle{display:inline-flex;align-items:center;justify-content:center}
+      .header-cta{margin-right:auto;min-height:40px;padding-inline:12px;font-size:11px}
+      .main-nav{display:none;position:absolute;top:100%;right:0;left:0;margin:0;padding:12px 20px 18px;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow);align-items:stretch;flex-direction:column;gap:0}
+      .main-nav.open{display:flex}
+      .nav-link,.dropdown-toggle{display:block;width:100%;text-align:right;padding:10px 0;font-size:13px}
+      .dropdown-menu{position:static;width:100%;margin-bottom:7px;box-shadow:none;border:0;border-right:2px solid var(--gold);border-radius:0;padding:4px 10px}
+      .dropdown.open .dropdown-menu{display:block}
+      .hero-inner{grid-template-columns:1fr;padding-block:56px;gap:30px}
+      .hero-copy{font-size:14px}
+      .hero-visual{min-height:340px;order:-1}
+      .portrait-placeholder{height:330px;width:min(78%,330px)}
+      .hero-mark{right:0;bottom:5px}
+      .section{padding-block:65px}
+      .intro-grid,.worldnama{grid-template-columns:1fr;gap:24px}
+      .philosophy-grid,.service-grid,.subunits{grid-template-columns:1fr}
+      .philosophy-card,.service-card{min-height:0}
+      .worldnama-panel{padding:27px}
+      .project-grid,.article-grid{grid-template-columns:1fr}
+      .cta-inner{align-items:flex-start;flex-direction:column}
+      .cta-inner h2{font-size:25px}
+      .footer-grid{grid-template-columns:1fr 1fr;gap:30px 20px}
+      .footer-brand{grid-column:1/-1}
+      .footer-contact{grid-column:1/-1}
+      .footer-bottom{align-items:flex-start;justify-content:center;flex-direction:column;padding:14px 0;gap:5px}
+    }
+  
+    .about-hero{background:var(--ivory);padding:78px 0 86px;overflow:hidden}
+    .about-hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:65px;align-items:center}
+    .about-hero h1{font-size:clamp(36px,4.2vw,54px);max-width:700px;margin:15px 0 18px}
+    .about-lead{font-size:16px;line-height:2.3;color:#626973;max-width:680px}
+    .portrait-frame{height:420px;border-radius:180px 180px 18px 18px;background:linear-gradient(145deg,#E4DED2,#D5CCBC);display:flex;align-items:center;justify-content:center;text-align:center;padding:35px;position:relative;overflow:hidden;border:1px solid rgba(20,36,58,.08)}
+    .portrait-frame:before,.portrait-frame:after{content:"";position:absolute;border:1px solid rgba(20,36,58,.13);border-radius:50%;width:260px;height:260px;top:50px;left:50%;transform:translateX(-50%)}
+    .portrait-frame:after{width:195px;height:195px;top:83px;border-color:rgba(197,166,106,.7)}
+    .portrait-frame span{z-index:1;color:#626973;font-size:13px;max-width:210px}.portrait-frame strong{display:block;color:var(--navy);font-size:17px;margin-bottom:8px}
+    .about-intro{display:grid;grid-template-columns:.65fr 1.35fr;gap:70px;align-items:start}
+    .about-intro h2,.about-section h2{color:var(--navy);font-size:clamp(26px,3vw,36px);line-height:1.7;margin:8px 0 15px}
+    .about-intro p,.about-section p{color:#626973;font-size:14px;line-height:2.35;margin:0 0 14px}
+    .quote-panel{background:var(--navy);color:#fff;padding:38px;border-radius:16px;margin-top:36px}
+    .quote-panel p{color:#E0E5EA;font-size:18px;line-height:2.2;margin:0}.quote-panel strong{color:var(--gold)}
+    .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+    .principle{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;min-height:210px}
+    .principle .num{font:13px Arial;color:var(--gold);letter-spacing:2px}.principle h3{color:var(--navy);font-size:19px;margin:15px 0 8px}.principle p{font-size:13px;margin:0}
+    .approach-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:32px}
+    .approach-card{padding:25px;background:#fff;border:1px solid var(--line);border-radius:13px}.approach-card h3{margin:0 0 8px;color:var(--navy);font-size:17px}.approach-card p{font-size:13px;margin:0}
+    .field-list{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+    .field{background:#fff;border:1px solid var(--line);border-radius:12px;padding:21px}.field h3{font-size:15px;color:var(--navy);margin:0 0 7px}.field p{font-size:12px;margin:0}
+    .founder-band{background:#F8F6F1;padding:42px;border-radius:16px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .founder-band h2{margin:0 0 7px;color:var(--navy);font-size:25px}.founder-band p{margin:0;color:var(--muted);font-size:13px}
+    @media(max-width:850px){.about-hero-grid,.about-intro{grid-template-columns:1fr;gap:35px}.portrait-frame{max-width:420px;margin:auto;width:100%;height:390px}.principles{grid-template-columns:1fr}.field-list{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.about-hero{padding:55px 0}.about-hero-grid{gap:25px}.about-lead{font-size:14px}.approach-grid,.field-list{grid-template-columns:1fr}.quote-panel{padding:26px}.founder-band{padding:27px;display:block}.founder-band .button{margin-top:18px}}
+
+    .jn-hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+    .jn-hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(197,166,106,.22);border-radius:50%;left:-170px;top:-210px;box-shadow:0 0 0 55px rgba(197,166,106,.035),0 0 0 110px rgba(197,166,106,.025)}
+    .jn-hero-inner{min-height:570px;display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center;padding-block:82px;position:relative;z-index:1}
+    .jn-hero h1{color:#fff;max-width:700px}.jn-hero .hero-copy{color:#D2D9E1}.jn-hero .eyebrow{color:var(--gold)}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+    .jn-visual{min-height:360px;display:flex;align-items:center;justify-content:center;position:relative}
+    .orbit{width:min(100%,390px);aspect-ratio:1;border:1px solid rgba(197,166,106,.55);border-radius:50%;display:grid;place-items:center;position:relative}
+    .orbit:before,.orbit:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.14);border-radius:50%}.orbit:before{inset:32px}.orbit:after{inset:68px}
+    .orbit-core{width:170px;height:170px;border-radius:50%;background:#203956;border:1px solid rgba(197,166,106,.5);display:grid;place-items:center;text-align:center;color:#fff;padding:20px;z-index:1}.orbit-core strong{font-size:24px;display:block}.orbit-core small{color:#D3C09A;font-size:11px}
+    .orbit-tag{position:absolute;background:#203956;border:1px solid rgba(197,166,106,.45);padding:9px 14px;border-radius:30px;color:#F1E7D3;font-size:12px}.tag-a{top:28px;right:25px}.tag-b{bottom:45px;right:0}.tag-c{bottom:35px;left:5px}
+    .section{padding-block:88px}.section-heading{max-width:760px}.lead{font-size:15px;line-height:2.25;color:#626973;max-width:850px}
+    .problem-grid,.participation-grid,.service-grid,.subunits,.benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .info-card,.service-card,.subunit{padding:27px 24px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;min-height:205px}
+    .info-card h3,.service-card h3,.subunit h3{color:var(--navy);font-size:19px;margin:12px 0 8px}.info-card p,.service-card p,.subunit p{color:var(--muted);font-size:13px;line-height:2.15;margin:0}
+    .card-no{font:700 12px Arial,sans-serif;color:#B0925A;letter-spacing:1px}
+    .dark-panel{background:var(--navy);color:#fff;border-radius:18px;padding:44px}.dark-panel h2{font-size:30px;margin:0 0 14px}.dark-panel p{color:#D1D8E0;font-size:14px;line-height:2.2;margin:0;max-width:850px}
+    .process{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;counter-reset:step}.process-item{padding:22px 18px;background:#fff;border:1px solid var(--line);border-radius:12px;counter-increment:step}.process-item:before{content:"0" counter(step);font:700 12px Arial;color:#B0925A}.process-item h3{color:var(--navy);font-size:15px;margin:12px 0 6px}.process-item p{font-size:12px;color:var(--muted);line-height:2;margin:0}
+    .founder-box{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:35px;background:#F4F1EA;border-radius:16px}.founder-box h2{color:var(--navy);margin:0 0 8px;font-size:25px}.founder-box p{margin:0;color:#626973;font-size:13px;line-height:2}
+    .cta-band{padding:68px 0;background:var(--navy);color:#fff}.cta-band h2{font-size:30px;margin:0 0 10px}.cta-band p{color:#D1D8E0;margin:0 0 22px;font-size:14px}
+    @media(max-width:900px){.jn-hero-inner{grid-template-columns:1fr;gap:25px}.jn-visual{min-height:300px}.problem-grid,.participation-grid,.service-grid,.subunits,.benefit-grid{grid-template-columns:repeat(2,1fr)}.process{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:600px){.jn-hero-inner{padding-block:58px}.jn-hero h1{font-size:35px}.problem-grid,.participation-grid,.service-grid,.subunits,.benefit-grid,.process{grid-template-columns:1fr}.dark-panel{padding:28px}.founder-box{display:block}.founder-box .button{margin-top:18px}.orbit{width:300px}.orbit-core{width:140px;height:140px}}
+</style>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fa_IR">
+  <meta property="og:site_name" content="علی عظیمی | جهان‌نما">
+  <meta property="og:title" content="جهان‌نما | شریک توسعه کسب‌وکار">
+  <meta property="og:description" content="جهان‌نما؛ شریک توسعه کسب‌وکارها، از شناخت مسئله تا مشارکت در اجرا">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- canonical URL پس از تعیین دامنه اختصاصی اضافه شود. -->
+</head><body><header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-name">علی عظیمی</span>
+      <span class="brand-caption">استراتژیست | کارآفرین</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="باز کردن منو" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="منوی اصلی">
+      <a class="nav-link" href="#top">صفحه اصلی</a>
+      <a class="nav-link" href="#about">درباره من</a>
+      <div class="dropdown" id="jahanDropdown">
+        <button class="dropdown-toggle" type="button" aria-expanded="false">جهان‌نما <span>⌄</span></button>
+        <div class="dropdown-menu">
+          <a href="#jahan-nama">معرفی جهان‌نما</a><a href="#brandit">برندیت</a>
+          <a href="#business-acceleration">شتابدهنده کسب‌وکار</a><a href="#investment">ارتباط با سرمایه‌گذار</a>
+          <a href="#nama">شتابدهنده نما</a><a href="#mind-club">باشگاه ذهن</a><a href="#modeling-academy">آکادمی مدلینگ</a>
+        </div>
+      </div>
+      <a class="nav-link" href="#projects">پروژه‌ها</a>
+      <a class="nav-link" href="#articles">مقالات</a>
+      <a class="nav-link" href="#contact">تماس</a>
+    </nav>
+    <a class="button button-primary header-cta" href="#submit">درخواست همکاری</a>
+  </div>
+</header><main id="top">
+<section class="jn-hero"><div class="container jn-hero-inner"><div><span class="eyebrow">جهان‌نما | شریک توسعه</span><h1>رشد را فقط طراحی نمی‌کنیم؛ در ساختن آن مشارکت می‌کنیم.</h1><p class="hero-copy">جهان‌نما در کنار کسب‌وکارهایی قرار می‌گیرد که برای عبور از چالش‌ها و ساختن آینده‌ای بزرگ‌تر، به همراهی فراتر از مشاوره نیاز دارند. ما متناسب با نیاز هر مجموعه، از تصمیم‌سازی راهبردی تا مشارکت مدیریتی و عملیاتی همراه می‌شویم.</p><div class="hero-actions"><a class="button button-gold" href="/jahan-nama/submit">ثبت خواسته و شروع مسیر</a><a class="button" style="border-color:rgba(255,255,255,.45);color:#fff" href="#approach">آشنایی با رویکرد ما</a></div></div><div class="jn-visual" aria-label="نمایش مفهومی رویکرد جهان‌نما"><div class="orbit"><span class="orbit-tag tag-a">شناخت</span><span class="orbit-tag tag-b">مشارکت</span><span class="orbit-tag tag-c">تحول</span><div class="orbit-core"><div><strong>جهان‌نما</strong><small>از شناخت تا تحقق</small></div></div></div></div></div></section>
+<section class="section" id="challenge"><div class="container"><div class="section-heading"><span class="section-kicker">چالش بسیاری از کسب‌وکارها</span><h2>فاصله میان دانستن و انجام دادن</h2><p>بسیاری از کسب‌وکارها به مشاوره، آموزش و برنامه‌های توسعه دسترسی دارند؛ اما چالش اصلی اغلب زمانی آغاز می‌شود که باید راهکارها در محیط واقعی کسب‌وکار اجرا شوند.</p></div><div class="problem-grid"><article class="info-card"><span class="card-no">01 / INSIGHT</span><h3>شناخت بدون اقدام</h3><p>مسئله و فرصت شناسایی می‌شود، اما تبدیل تحلیل به تصمیم و برنامه اجرایی با دشواری روبه‌روست.</p></article><article class="info-card"><span class="card-no">02 / EXECUTION</span><h3>برنامه بدون همراهی</h3><p>برنامه توسعه تدوین می‌شود، اما تیم برای هماهنگی، رفع موانع و پیگیری اجرای آن به همراهی نیاز دارد.</p></article><article class="info-card"><span class="card-no">03 / CONTINUITY</span><h3>اقدام بدون پیوستگی</h3><p>اقدام‌های مقطعی بدون ارزیابی و اصلاح مستمر، لزوماً به تغییر پایدار در عملکرد منجر نمی‌شوند.</p></article></div></div></section>
+<section class="section section-soft" id="approach"><div class="container"><div class="section-heading"><span class="section-kicker">رویکرد جهان‌نما</span><h2>به‌عنوان شریک توسعه، کنار تیم شما قرار می‌گیریم</h2><p>پس از شناخت و ارزیابی کسب‌وکارهای متقاضی، در صورت وجود زمینه مناسب همکاری، متناسب با نیاز مجموعه در فرایندهای راهبردی، مدیریتی و عملیاتی مشارکت می‌کنیم.</p></div><div class="participation-grid"><article class="info-card"><span class="card-no">LEVEL 01</span><h3>مشارکت راهبردی</h3><p>تحلیل وضعیت، شناسایی فرصت‌ها و چالش‌ها، طراحی مسیر توسعه، تصمیم‌سازی و پایش برنامه‌ها.</p></article><article class="info-card"><span class="card-no">LEVEL 02</span><h3>مشارکت مدیریتی</h3><p>همراهی در فرایندهای مدیریتی منتخب، هماهنگی میان بخش‌ها و پیگیری اجرای برنامه‌های توافق‌شده.</p></article><article class="info-card"><span class="card-no">LEVEL 03</span><h3>مشارکت عملیاتی</h3><p>حضور مستقیم در پروژه‌ها و همراهی با تیم اجرایی برای پیشبرد اقدام‌ها و رفع موانع عملیاتی.</p></article></div><p class="placeholder-note">نوع، دامنه و حدود اختیارات مشارکت متناسب با شرایط هر کسب‌وکار و در توافق همکاری مشخص می‌شود.</p></div></section>
+<section class="section" id="services"><div class="container"><div class="section-heading"><span class="section-kicker">خدمات تخصصی</span><h2>سه حوزه برای توسعه کسب‌وکار</h2><p>خدمات جهان‌نما در سه حوزه تخصصی سازمان‌دهی شده‌اند و می‌توانند متناسب با نیاز کسب‌وکار، به‌صورت مستقل یا در قالب یک مسیر یکپارچه ارائه شوند.</p></div><div class="service-grid"><article class="service-card" id="brandit"><span class="card-no">01</span><h3>برندیت</h3><p>توسعه برند، طراحی و تقویت هویت بصری، تبلیغات و ارتباطات بازاریابی، و کمک به توسعه بازار و جایگاه برند.</p><a class="text-link" href="/jahan-nama/brandit">آشنایی با برندیت</a></article><article class="service-card" id="business-acceleration"><span class="card-no">02</span><h3>شتابدهنده کسب‌وکار</h3><p>عارضه‌یابی، مشاوره و طراحی برنامه رشد، بهبود عملکرد، شناسایی فرصت‌های افزایش درآمد و کاهش هزینه‌ها، همراهی در اجرا.</p><a class="text-link" href="/jahan-nama/business-acceleration">آشنایی با خدمات</a></article><article class="service-card" id="investment"><span class="card-no">03</span><h3>ارتباط با سرمایه‌گذار</h3><p>ارزیابی آمادگی جذب سرمایه، آماده‌سازی تیم و مستندات ارائه، و تسهیل ارتباط با سرمایه‌گذاران و مسیرهای تأمین مالی.</p><a class="text-link" href="/jahan-nama/investment">آشنایی با این خدمت</a></article></div></div></section>
+<section class="section section-soft" id="ventures"><div class="container"><div class="section-heading"><span class="section-kicker">واحدها و مجموعه‌های زیرمجموعه</span><h2>فعالیت‌هایی با مأموریت‌های مستقل، زیر چتر جهان‌نما</h2><p>در کنار خدمات تخصصی کسب‌وکار، جهان‌نما میزبان مجموعه‌هایی با حوزه‌های فعالیت و مخاطبان متفاوت است.</p></div><div class="subunits"><article class="subunit" id="nama"><span class="subunit-type">توسعه تجاری رویداد</span><h3>شتابدهنده نما</h3><p>تجاری‌سازی رویدادها، طراحی مدل درآمدی، توسعه ظرفیت تجاری و خلق فرصت‌های همکاری و کسب‌وکار پیرامون رویدادها.</p><a class="text-link" href="/jahan-nama/nama">معرفی شتابدهنده نما</a></article><article class="subunit" id="mind-club"><span class="subunit-type">فرهنگی و آموزشی</span><h3>باشگاه ذهن</h3><p>شناخت ذهن، سوگیری‌های شناختی، خطاهای تصمیم‌گیری و چگونگی شکل‌گیری باورها از مسیر محتوا و رویدادهای آموزشی.</p><a class="text-link" href="/jahan-nama/mind-club">معرفی باشگاه ذهن</a></article><article class="subunit" id="modeling-academy"><span class="subunit-type">آموزش تخصصی</span><h3>آکادمی مدلینگ</h3><p>فعالیت آموزشی تخصصی و توسعه مهارت‌ها در حوزه مدلینگ، در قالب برنامه‌ها و مسیرهای آموزشی مستقل.</p><a class="text-link" href="/jahan-nama/modeling-academy">معرفی آکادمی مدلینگ</a></article></div></div></section>
+<section class="section"><div class="container"><div class="section-heading"><span class="section-kicker">مزیت رویکرد مشارکتی</span><h2>همراهی فراتر از ارائه توصیه</h2></div><div class="benefit-grid"><article class="info-card"><h3>شناخت متناسب با واقعیت</h3><p>راهکارها بر پایه شرایط، منابع، چالش‌ها و ظرفیت‌های همان کسب‌وکار شکل می‌گیرند.</p></article><article class="info-card"><h3>حضور در مسیر اجرا</h3><p>همراهی می‌تواند از تصمیم‌سازی فراتر برود و به مشارکت مدیریتی یا عملیاتی برسد.</p></article><article class="info-card"><h3>پیگیری و بهبود</h3><p>پیشرفت برنامه‌ها ارزیابی می‌شود و مسیر همکاری بر اساس تجربه و شرایط واقعی اصلاح خواهد شد.</p></article></div></div></section>
+<section class="section section-soft" id="process"><div class="container"><div class="section-heading"><span class="section-kicker">شروع همکاری</span><h2>مسیر همکاری چگونه آغاز می‌شود؟</h2><p>همکاری با شناخت متقابل آغاز می‌شود و پس از بررسی تناسب نیازها و ظرفیت‌ها، چارچوب مشارکت مشخص خواهد شد.</p></div><div class="process"><article class="process-item"><h3>ثبت خواسته</h3><p>هدف یا مسئله اصلی خود را با ما در میان بگذارید.</p></article><article class="process-item"><h3>ارزیابی اولیه</h3><p>زمینه و تناسب احتمالی همکاری بررسی می‌شود.</p></article><article class="process-item"><h3>جلسه شناخت</h3><p>جزئیات نیازها، ظرفیت‌ها و انتظارات روشن می‌شود.</p></article><article class="process-item"><h3>تعیین مدل مشارکت</h3><p>دامنه، نقش‌ها و مسیر همکاری طراحی می‌شود.</p></article><article class="process-item"><h3>همراهی و اجرا</h3><p>برنامه توافق‌شده اجرا و روند آن پیگیری می‌شود.</p></article></div></div></section>
+<section class="section"><div class="container"><div class="founder-box"><div><span class="section-kicker">بنیان‌گذار جهان‌نما</span><h2>علی عظیمی</h2><p>جهان‌نما نمود سازمانی و اجرایی رویکردی است که تحلیل، کشف فرصت و تحول‌آفرینی را به یک مسیر عملی برای توسعه پیوند می‌دهد.</p></div><a class="button button-primary" href="/about">آشنایی با بنیان‌گذار</a></div></div></section>
+<section class="cta-band"><div class="container"><h2>شما هدف را انتخاب کنید؛ جهان‌نما مسیر رسیدن به آن را می‌سازد.</h2><p>خواسته و هدف خود را با ما در میان بگذارید تا امکان و مسیر همکاری را بررسی کنیم.</p><a class="button button-gold" href="/jahan-nama/submit">ثبت خواسته و شروع مسیر</a></div></section>
+</main><footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand-name">علی عظیمی</a>
+        <span class="brand-caption">استراتژیست، کارآفرین و توسعه‌دهنده کسب‌وکار</span>
+        <p class="footer-description">تحلیل می‌کنیم تا بهتر بشناسیم؛ فرصت‌ها را کشف می‌کنیم تا افق‌های تازه‌ای بسازیم؛ و تحول می‌آفرینیم تا امکان‌های جدید را به واقعیت تبدیل کنیم.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">دسترسی سریع</h2>
+        <nav class="footer-links">
+          <a href="#top">صفحه اصلی</a><a href="#about">درباره من</a><a href="#projects">پروژه‌ها و دستاوردها</a><a href="#articles">دیدگاه‌ها و مقالات</a><a href="#contact">تماس با من</a>
+        </nav>
+      </div>
+      <div>
+        <h2 class="footer-title">جهان‌نما</h2>
+        <nav class="footer-links">
+          <a href="/jahan-nama">معرفی جهان‌نما</a><a href="/jahan-nama/brandit">برندیت</a><a href="/jahan-nama/business-acceleration">شتابدهنده کسب‌وکار</a><a href="/jahan-nama/investment">ارتباط با سرمایه‌گذار</a><a href="/jahan-nama/nama">شتابدهنده نما</a><a href="/jahan-nama/mind-club">باشگاه ذهن</a><a href="/jahan-nama/modeling-academy">آکادمی مدلینگ</a>
+        </nav>
+      </div>
+      <div>
+        <h2 class="footer-title">ارتباط با من</h2>
+        <div class="contact-list">
+          <span class="contact-line">تلفن: پس از تأیید درج می‌شود</span>
+          <span class="contact-line">ایمیل: پس از تأیید درج می‌شود</span>
+          <span class="contact-line">شبکه‌های اجتماعی: پس از تأیید درج می‌شوند</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© تمامی حقوق این وب‌سایت محفوظ است.</span>
+      <span class="footer-signature">ALI AZIMI</span>
+    </div>
+  </div>
+</footer><script>
+  const menuToggle = document.getElementById('menuToggle');
+  const mainNav = document.getElementById('mainNav');
+  const dropdown = document.getElementById('jahanDropdown');
+  const dropdownButton = dropdown.querySelector('.dropdown-toggle');
+
+  menuToggle.addEventListener('click', () => {
+    const opened = mainNav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(opened));
+    menuToggle.textContent = opened ? '×' : '☰';
+  });
+
+  dropdownButton.addEventListener('click', () => {
+    if (window.matchMedia('(max-width: 760px)').matches) {
+      const opened = dropdown.classList.toggle('open');
+      dropdownButton.setAttribute('aria-expanded', String(opened));
+    }
+  });
+
+  mainNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.textContent = '☰';
+    });
+  });
+</script></body></html>

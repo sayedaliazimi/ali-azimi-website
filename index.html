@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="وب‌سایت رسمی علی عظیمی؛ استراتژیست، کارآفرین و توسعه‌دهنده کسب‌وکار">
+  <title>علی عظیمی | از شناخت مسئله تا خلق فرصت و تحول</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy:#14243A; --gold:#C5A66A; --ivory:#F4F1EA; --ink:#30343B;
+      --white:#fff; --muted:#747B84; --line:#E7E5E0; --soft:#EAE5DA;
+      --shadow:0 12px 34px rgba(20,36,58,.07); --radius:16px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:100px}
+    body{margin:0;background:#fff;color:var(--ink);font-family:"Vazirmatn",Tahoma,sans-serif;line-height:1.9}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    .container{width:min(1184px,calc(100% - 48px));margin-inline:auto}
+    .site-header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(20,36,58,.07)}
+    .header-inner{min-height:84px;display:flex;align-items:center;gap:28px}
+    .brand{flex:0 0 auto}
+    .brand-name{display:block;color:var(--navy);font-size:25px;font-weight:800;line-height:1.35}
+    .brand-caption{display:block;color:var(--muted);font-size:11px;font-weight:500}
+    .main-nav{display:flex;align-items:center;gap:clamp(13px,1.8vw,25px);margin-right:auto}
+    .nav-link,.dropdown-toggle{padding:12px 0;border:0;background:none;color:#414852;font-size:12px;font-weight:500;white-space:nowrap;cursor:pointer}
+    .nav-link:hover,.dropdown-toggle:hover{color:#9A7A42}
+    .dropdown{position:relative}
+    .dropdown-toggle span{color:var(--gold);padding-right:4px}
+    .dropdown-menu{display:none;position:absolute;top:calc(100% + 7px);right:-16px;width:230px;padding:9px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
+    .dropdown:hover .dropdown-menu,.dropdown:focus-within .dropdown-menu{display:block}
+    .dropdown-menu a{display:block;padding:8px 10px;border-radius:7px;font-size:12px;color:#4D535C}
+    .dropdown-menu a:hover{background:var(--ivory);color:var(--navy)}
+    .button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 21px;border-radius:8px;font-size:13px;font-weight:600;border:1px solid transparent;transition:.2s ease;cursor:pointer}
+    .button-primary{background:var(--navy);color:#fff}
+    .button-primary:hover{background:#203956;transform:translateY(-2px)}
+    .button-outline{border-color:rgba(20,36,58,.35);color:var(--navy);background:transparent}
+    .button-outline:hover{border-color:var(--gold);color:#8D6B35}
+    .button-gold{background:var(--gold);color:var(--navy)}
+    .button-gold:hover{background:#D2B77F;transform:translateY(-2px)}
+    .header-cta{min-height:43px;padding-inline:17px;font-size:12px;flex:0 0 auto}
+    .menu-toggle{display:none;width:43px;height:43px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--navy);font-size:22px;cursor:pointer}
+    .hero{background:var(--ivory);overflow:hidden}
+    .hero-inner{min-height:590px;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:58px;padding-block:72px}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;color:#987744;font-size:12px;font-weight:700}
+    .eyebrow:before{content:"";width:27px;height:1px;background:var(--gold)}
+    h1{max-width:690px;margin:17px 0 20px;color:var(--navy);font-size:clamp(37px,4.6vw,58px);font-weight:800;line-height:1.55;letter-spacing:-1.2px}
+    .hero-copy{max-width:620px;margin:0;color:#626973;font-size:16px;line-height:2.2}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+    .hero-visual{min-height:405px;position:relative;display:flex;align-items:center;justify-content:center}
+    .portrait-placeholder{width:min(100%,390px);height:440px;border-radius:190px 190px 18px 18px;background:linear-gradient(145deg,#E6E0D4,#D8D0C1);border:1px solid rgba(20,36,58,.08);display:flex;align-items:center;justify-content:center;text-align:center;padding:35px;position:relative;overflow:hidden}
+    .portrait-placeholder:before{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(20,36,58,.12);border-radius:50%;top:48px;left:50%;transform:translateX(-50%)}
+    .portrait-placeholder:after{content:"";position:absolute;width:190px;height:190px;border:1px solid rgba(197,166,106,.55);border-radius:50%;top:83px;left:50%;transform:translateX(-50%)}
+    .portrait-note{position:relative;z-index:1;color:#69717A;font-size:13px;max-width:220px}
+    .portrait-note strong{display:block;color:var(--navy);font-size:17px;margin-bottom:7px}
+    .hero-mark{position:absolute;bottom:22px;right:0;background:#fff;padding:17px 22px;border-right:3px solid var(--gold);box-shadow:var(--shadow);font-size:12px;color:var(--navy)}
+    .section{padding-block:96px}
+    .section-soft{background:#FAF9F6}
+    .section-dark{background:var(--navy);color:#fff}
+    .section-heading{max-width:690px;margin-bottom:42px}
+    .section-kicker{color:#9A7A42;font-size:12px;font-weight:700}
+    .section-heading h2{margin:8px 0 12px;color:var(--navy);font-size:clamp(27px,3vw,37px);line-height:1.6}
+    .section-heading p{margin:0;color:var(--muted);font-size:14px;line-height:2.1}
+    .section-dark .section-heading h2{color:#fff}
+    .section-dark .section-heading p{color:#C6CFD9}
+    .intro-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:70px;align-items:start}
+    .intro-label{color:#9A7A42;font-size:13px;font-weight:700}
+    .intro-title{margin:8px 0;color:var(--navy);font-size:30px;line-height:1.7}
+    .intro-text{margin:0;color:#626973;font-size:15px;line-height:2.25}
+    .philosophy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .philosophy-card{padding:28px 25px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;min-height:220px}
+    .step-number{color:var(--gold);font-family:Arial,sans-serif;font-size:13px;letter-spacing:2px}
+    .philosophy-card h3{margin:17px 0 9px;color:var(--navy);font-size:20px}
+    .philosophy-card p{margin:0;color:var(--muted);font-size:13px;line-height:2.1}
+    .worldnama{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+    .worldnama-panel{padding:38px;border-radius:18px;background:#1C304B;border:1px solid rgba(255,255,255,.1)}
+    .worldnama-panel .mini-label{color:var(--gold);font-size:12px;font-weight:700}
+    .worldnama-panel h3{font-size:29px;line-height:1.7;margin:12px 0;color:#fff}
+    .worldnama-panel p{color:#C6CFD9;font-size:14px;line-height:2.2;margin:0 0 23px}
+    .worldnama-copy h2{font-size:32px;line-height:1.7;margin:0 0 16px;color:#fff}
+    .worldnama-copy p{color:#C6CFD9;font-size:14px;line-height:2.25;margin:0 0 25px}
+    .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service-card{padding:27px 24px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;min-height:230px;transition:transform .2s,box-shadow .2s}
+    .service-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .service-index{color:#B0925A;font-size:12px;font-weight:700}
+    .service-card h3{color:var(--navy);font-size:19px;margin:15px 0 8px}
+    .service-card p{color:var(--muted);font-size:13px;line-height:2.1;margin:0}
+    .subunits{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .subunit{padding:26px;border-radius:var(--radius);background:#fff;border:1px solid var(--line)}
+    .subunit h3{color:var(--navy);font-size:19px;margin:0 0 8px}
+    .subunit p{color:var(--muted);font-size:13px;margin:0;line-height:2.1}
+    .subunit .subunit-type{color:#9A7A42;font-size:11px;font-weight:700;margin-bottom:12px;display:block}
+    .project-grid,.article-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .project-card,.article-card{padding:29px;border-radius:var(--radius);background:#fff;border:1px solid var(--line)}
+    .project-card h3,.article-card h3{margin:10px 0;color:var(--navy);font-size:20px;line-height:1.7}
+    .project-card p,.article-card p{margin:0;color:var(--muted);font-size:13px;line-height:2.1}
+    .card-label{font-size:11px;color:#9A7A42;font-weight:700}
+    .text-link{display:inline-flex;margin-top:18px;color:var(--navy);font-size:12px;font-weight:700}
+    .text-link:after{content:"←";margin-right:8px;color:var(--gold)}
+    .placeholder-note{margin-top:17px;padding:12px 15px;border-radius:9px;background:#F7F5F0;color:#777;font-size:11px}
+    .cta-band{padding:62px 0;background:var(--ivory)}
+    .cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}
+    .cta-inner h2{margin:0 0 8px;color:var(--navy);font-size:30px}
+    .cta-inner p{margin:0;color:#68717A;font-size:14px}
+    .site-footer{background:var(--navy);color:#E8ECF1;padding:62px 0 20px}
+    .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.1fr;gap:42px;padding-bottom:43px}
+    .footer-brand .brand-name{color:#fff;font-size:27px}
+    .footer-brand .brand-caption{color:#B8C2CE}
+    .footer-description{max-width:300px;margin:16px 0 0;color:#C3CCD6;font-size:12px;line-height:2.2}
+    .footer-title{margin:4px 0 17px;color:#fff;font-size:14px}
+    .footer-links,.contact-list{display:grid;gap:10px}
+    .footer-links a,.contact-line{color:#C3CCD6;font-size:12px}
+    .footer-links a:hover{color:var(--gold)}
+    .footer-bottom{min-height:58px;border-top:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:space-between;color:#AEB9C6;font-size:11px}
+    .footer-signature{color:var(--gold);font-family:Arial,sans-serif;letter-spacing:1.5px;direction:ltr}
+    @media(max-width:1000px){
+      .header-inner{gap:15px}.main-nav{gap:11px}.nav-link,.dropdown-toggle{font-size:11px}
+      .footer-grid{grid-template-columns:1.2fr 1fr 1fr}.footer-contact{grid-column:1/-1}
+      .hero-inner{gap:30px}
+    }
+    @media(max-width:760px){
+      .container{width:min(100% - 36px,600px)}
+      .header-inner{min-height:72px;gap:12px}
+      .brand-name{font-size:22px}
+      .menu-toggle{display:inline-flex;align-items:center;justify-content:center}
+      .header-cta{margin-right:auto;min-height:40px;padding-inline:12px;font-size:11px}
+      .main-nav{display:none;position:absolute;top:100%;right:0;left:0;margin:0;padding:12px 20px 18px;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow);align-items:stretch;flex-direction:column;gap:0}
+      .main-nav.open{display:flex}
+      .nav-link,.dropdown-toggle{display:block;width:100%;text-align:right;padding:10px 0;font-size:13px}
+      .dropdown-menu{position:static;width:100%;margin-bottom:7px;box-shadow:none;border:0;border-right:2px solid var(--gold);border-radius:0;padding:4px 10px}
+      .dropdown.open .dropdown-menu{display:block}
+      .hero-inner{grid-template-columns:1fr;padding-block:56px;gap:30px}
+      .hero-copy{font-size:14px}
+      .hero-visual{min-height:340px;order:-1}
+      .portrait-placeholder{height:330px;width:min(78%,330px)}
+      .hero-mark{right:0;bottom:5px}
+      .section{padding-block:65px}
+      .intro-grid,.worldnama{grid-template-columns:1fr;gap:24px}
+      .philosophy-grid,.service-grid,.subunits{grid-template-columns:1fr}
+      .philosophy-card,.service-card{min-height:0}
+      .worldnama-panel{padding:27px}
+      .project-grid,.article-grid{grid-template-columns:1fr}
+      .cta-inner{align-items:flex-start;flex-direction:column}
+      .cta-inner h2{font-size:25px}
+      .footer-grid{grid-template-columns:1fr 1fr;gap:30px 20px}
+      .footer-brand{grid-column:1/-1}
+      .footer-contact{grid-column:1/-1}
+      .footer-bottom{align-items:flex-start;justify-content:center;flex-direction:column;padding:14px 0;gap:5px}
+    }
+  </style>
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fa_IR">
+  <meta property="og:site_name" content="علی عظیمی | جهان‌نما">
+  <meta property="og:title" content="علی عظیمی | از شناخت مسئله تا خلق فرصت و تحول">
+  <meta property="og:description" content="وب‌سایت رسمی علی عظیمی؛ استراتژیست، کارآفرین و توسعه‌دهنده کسب‌وکار">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- canonical URL پس از تعیین دامنه اختصاصی اضافه شود. -->
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-name">علی عظیمی</span>
+      <span class="brand-caption">استراتژیست | کارآفرین</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="باز کردن منو" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="منوی اصلی">
+      <a class="nav-link" href="#top">صفحه اصلی</a>
+      <a class="nav-link" href="#about">درباره من</a>
+      <div class="dropdown" id="jahanDropdown">
+        <button class="dropdown-toggle" type="button" aria-expanded="false">جهان‌نما <span>⌄</span></button>
+        <div class="dropdown-menu">
+          <a href="#jahan-nama">معرفی جهان‌نما</a><a href="#brandit">برندیت</a>
+          <a href="#business-acceleration">شتابدهنده کسب‌وکار</a><a href="#investment">ارتباط با سرمایه‌گذار</a>
+          <a href="#nama">شتابدهنده نما</a><a href="#mind-club">باشگاه ذهن</a><a href="#modeling-academy">آکادمی مدلینگ</a>
+        </div>
+      </div>
+      <a class="nav-link" href="#projects">پروژه‌ها</a>
+      <a class="nav-link" href="#articles">مقالات</a>
+      <a class="nav-link" href="#contact">تماس</a>
+    </nav>
+    <a class="button button-primary header-cta" href="#submit">درخواست همکاری</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <span class="eyebrow">تفکر راهبردی · کارآفرینی · توسعه</span>
+        <h1>از شناخت مسئله تا خلق فرصت و تحول</h1>
+        <p class="hero-copy">من علی عظیمی هستم؛ استراتژیست، کارآفرین و توسعه‌دهنده کسب‌وکار. فعالیت حرفه‌ای من بر پیوند تفکر تحلیلی، شناسایی فرصت‌های نو و تبدیل ایده‌ها به راهکارها و ساختارهای ارزش‌آفرین متمرکز است.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#about">درباره من</a>
+          <a class="button button-outline" href="#jahan-nama">آشنایی با جهان‌نما</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <!-- تصویر پرتره واقعی در نسخه نهایی در این جایگاه قرار می‌گیرد. -->
+        <div class="portrait-placeholder">
+          <div class="portrait-note"><strong>جایگاه تصویر پرتره</strong>عکس واقعی علی عظیمی پس از دریافت در این بخش قرار می‌گیرد.</div>
+        </div>
+        <div class="hero-mark">تحلیل&nbsp; ← &nbsp;کشف فرصت&nbsp; ← &nbsp;تحول‌آفرینی</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container intro-grid">
+      <div>
+        <span class="intro-label">درباره من</span>
+        <h2 class="intro-title">نگاه تحلیلی، رویکرد کارآفرینانه</h2>
+      </div>
+      <p class="intro-text">برای من توسعه از شناخت دقیق مسئله آغاز می‌شود. شناخت روابط، ظرفیت‌ها و محدودیت‌ها کمک می‌کند فرصت‌هایی دیده شوند که در نگاه نخست آشکار نیستند. ارزش ایده زمانی شکل می‌گیرد که بتوان آن را به راهکار، ساختار و اقدام مؤثر تبدیل کرد. این نگاه، مبنای فعالیت‌های حرفه‌ای و مسیر شکل‌گیری جهان‌نماست.</p>
+    </div>
+  </section>
+
+  <section class="section section-soft" id="philosophy">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-kicker">فلسفه کاری من</span>
+        <h2>سه گام برای تبدیل شناخت به ارزش</h2>
+        <p>چارچوب فکری من بر سه مرحله پیوسته استوار است؛ از فهم واقعیت تا ساختن امکان‌های تازه و تبدیل آن‌ها به نتیجه.</p>
+      </div>
+      <div class="philosophy-grid">
+        <article class="philosophy-card">
+          <span class="step-number">01 / ANALYSIS</span>
+          <h3>تحلیل</h3>
+          <p>شناخت واقعیت، ریشه‌یابی مسائل و بررسی روابط میان عوامل برای رسیدن به تصویری روشن از وضعیت موجود.</p>
+        </article>
+        <article class="philosophy-card">
+          <span class="step-number">02 / OPPORTUNITY</span>
+          <h3>کشف فرصت</h3>
+          <p>دیدن ظرفیت‌های پنهان و ایجاد ارتباط میان ایده‌ها، منابع و نیازها برای گشودن مسیرهای تازه.</p>
+        </article>
+        <article class="philosophy-card">
+          <span class="step-number">03 / TRANSFORMATION</span>
+          <h3>تحول‌آفرینی</h3>
+          <p>تبدیل شناخت و فرصت به راهکار، ساختار و اقدام برای خلق ارزش و ایجاد تغییر پایدار.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="jahan-nama">
+    <div class="container worldnama">
+      <div class="worldnama-copy">
+        <span class="section-kicker">جهان‌نما</span>
+        <h2>رشد را فقط طراحی نمی‌کنیم؛ در ساختن آن مشارکت می‌کنیم.</h2>
+        <p>جهان‌نما مهم‌ترین نمود سازمانی و اجرایی این رویکرد است؛ مجموعه‌ای که با نگاه مشارکتی، در کنار کسب‌وکارهای منتخب قرار می‌گیرد و متناسب با نیاز آن‌ها در مسیر توسعه، تصمیم‌سازی و اجرا مشارکت می‌کند.</p>
+        <a class="button button-gold" href="/jahan-nama">آشنایی با جهان‌نما</a>
+      </div>
+      <div class="worldnama-panel">
+        <span class="mini-label">رویکرد مشارکتی</span>
+        <h3>از شناخت کسب‌وکار تا همراهی در مسیر اجرا</h3>
+        <p>جهان‌نما پس از ارزیابی اولیه و شناسایی زمینه‌های همکاری، متناسب با نیاز هر مجموعه در سطح راهبردی، مدیریتی یا عملیاتی در کنار تیم آن قرار می‌گیرد.</p>
+        <a class="text-link" style="color:#fff" href="/jahan-nama">شناخت مدل همکاری</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-kicker">خدمات تخصصی جهان‌نما</span>
+        <h2>حوزه‌های اصلی مشارکت و توسعه</h2>
+        <p>سه واحد تخصصی جهان‌نما، نیازهای مهم کسب‌وکار را در مسیر ساخت برند، توسعه عملکرد و تأمین مالی پوشش می‌دهند.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card" id="brandit">
+          <span class="service-index">01 / BRAND</span>
+          <h3>برندیت</h3>
+          <p>توسعه برند، طراحی هویت، تبلیغات و توسعه بازار با هدف ساخت جایگاهی متمایز و ماندگار.</p>
+          <a class="text-link" href="/jahan-nama/brandit">معرفی خدمت</a>
+        </article>
+        <article class="service-card" id="business-acceleration">
+          <span class="service-index">02 / BUSINESS GROWTH</span>
+          <h3>شتابدهنده کسب‌وکار</h3>
+          <p>عارضه‌یابی، طراحی برنامه رشد، بهبود عملکرد و همراهی در اجرای راهکارهای توسعه.</p>
+          <a class="text-link" href="/jahan-nama/business-acceleration">معرفی خدمت</a>
+        </article>
+        <article class="service-card" id="investment">
+          <span class="service-index">03 / INVESTMENT</span>
+          <h3>ارتباط با سرمایه‌گذار</h3>
+          <p>ارزیابی آمادگی جذب سرمایه، آماده‌سازی کسب‌وکار و تسهیل ارتباط با سرمایه‌گذاران.</p>
+          <a class="text-link" href="/jahan-nama/investment">معرفی خدمت</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft" id="subsidiaries">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-kicker">زیرمجموعه‌های جهان‌نما</span>
+        <h2>فعالیت‌هایی در حوزه‌های تخصصی و مستقل</h2>
+        <p>این مجموعه‌ها زیرمجموعه مستقیم جهان‌نما هستند و هر یک مأموریت و حوزه فعالیت مستقل خود را دنبال می‌کنند.</p>
+      </div>
+      <div class="subunits">
+        <article class="subunit" id="nama">
+          <span class="subunit-type">تجاری‌سازی رویدادها</span>
+          <h3>شتابدهنده نما</h3>
+          <p>طراحی مدل درآمدی، توسعه ظرفیت تجاری رویدادها و خلق فرصت‌های همکاری و کسب‌وکار پیرامون آن‌ها.</p>
+          <a class="text-link" href="/jahan-nama/nama">معرفی شتابدهنده نما</a>
+        </article>
+        <article class="subunit" id="mind-club">
+          <span class="subunit-type">فرهنگی و آموزشی</span>
+          <h3>باشگاه ذهن</h3>
+          <p>شناخت ذهن، سوگیری‌های شناختی، خطاهای تصمیم‌گیری و سازوکار شکل‌گیری باورها.</p>
+          <a class="text-link" href="/jahan-nama/mind-club">معرفی باشگاه ذهن</a>
+        </article>
+        <article class="subunit" id="modeling-academy">
+          <span class="subunit-type">آموزش تخصصی</span>
+          <h3>آکادمی مدلینگ</h3>
+          <p>فعالیت آموزشی تخصصی و مستقل در حوزه مدلینگ.</p>
+          <a class="text-link" href="/jahan-nama/modeling-academy">معرفی آکادمی</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-kicker">پروژه‌ها و دستاوردها</span>
+        <h2>ایده‌هایی که به مسیر عمل وارد شده‌اند</h2>
+        <p>در این بخش فقط پروژه‌های منتخب و مستقل نمایش داده می‌شوند؛ زیرمجموعه‌های جهان‌نما در بخش اختصاصی خود معرفی شده‌اند.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <span class="card-label">توسعه کسب‌وکار و کارآفرینی</span>
+          <h3>جهان‌نما</h3>
+          <p>بنیان‌گذاری و توسعه یک مجموعه با رویکرد مشارکت در رشد کسب‌وکارها و تبدیل برنامه‌های توسعه به اقدام.</p>
+          <a class="text-link" href="/jahan-nama">مشاهده جهان‌نما</a>
+        </article>
+        <article class="project-card">
+          <span class="card-label">پژوهش و مدل‌سازی</span>
+          <h3>مدل‌سازی مطلوبیت با رویکرد اقتصاد رفتاری</h3>
+          <p>پژوهشی درباره صورت‌بندی ریاضی مطلوبیت با در نظر گرفتن عوامل ذهنی، حالات فردی و رفتار مصرف‌کننده.</p>
+          <div class="placeholder-note">معرفی تفصیلی و وضعیت انتشار پژوهش پس از نهایی‌شدن اطلاعات علمی درج خواهد شد.</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft" id="articles">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-kicker">دیدگاه‌ها و مقالات</span>
+        <h2>یادداشت‌هایی درباره فکر، رفتار و توسعه</h2>
+        <p>این بخش برای انتشار دیدگاه‌ها، تحلیل‌ها و نوشته‌های تخصصی در حوزه‌های مورد علاقه و فعالیت حرفه‌ای شکل می‌گیرد.</p>
+      </div>
+      <div class="article-grid">
+        <article class="article-card">
+          <span class="card-label">اقتصاد رفتاری</span>
+          <h3>مدل‌سازی مطلوبیت و نقش عوامل ذهنی</h3>
+          <p>نگاهی به امکان گسترش چارچوب‌های متعارف مطلوبیت برای توضیح اثر عوامل ذهنی و رفتاری.</p>
+          <div class="placeholder-note">مقاله و لینک انتشار پس از آماده‌شدن نسخه قابل انتشار اضافه می‌شود.</div>
+        </article>
+        <article class="article-card">
+          <span class="card-label">راهبرد و توسعه</span>
+          <h3>از شناخت مسئله تا اجرای راهکار</h3>
+          <p>چرا فاصله میان تحلیل و اجرا یکی از چالش‌های مهم در مسیر توسعه کسب‌وکار است؟</p>
+          <div class="placeholder-note">متن نهایی این یادداشت در مرحله تدوین قرار می‌گیرد.</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band" id="submit">
+    <div class="container cta-inner">
+      <div>
+        <h2>خواسته شما چیست؟</h2>
+        <p>شما هدف را انتخاب کنید؛ جهان‌نما مسیر رسیدن به آن را می‌سازد.</p>
+      </div>
+      <a class="button button-primary" href="/jahan-nama/submit">ثبت خواسته و شروع مسیر</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand-name">علی عظیمی</a>
+        <span class="brand-caption">استراتژیست، کارآفرین و توسعه‌دهنده کسب‌وکار</span>
+        <p class="footer-description">تحلیل می‌کنیم تا بهتر بشناسیم؛ فرصت‌ها را کشف می‌کنیم تا افق‌های تازه‌ای بسازیم؛ و تحول می‌آفرینیم تا امکان‌های جدید را به واقعیت تبدیل کنیم.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">دسترسی سریع</h2>
+        <nav class="footer-links">
+          <a href="#top">صفحه اصلی</a><a href="#about">درباره من</a><a href="#projects">پروژه‌ها و دستاوردها</a><a href="#articles">دیدگاه‌ها و مقالات</a><a href="#contact">تماس با من</a>
+        </nav>
+      </div>
+      <div>
+        <h2 class="footer-title">جهان‌نما</h2>
+        <nav class="footer-links">
+          <a href="/jahan-nama">معرفی جهان‌نما</a><a href="/jahan-nama/brandit">برندیت</a><a href="/jahan-nama/business-acceleration">شتابدهنده کسب‌وکار</a><a href="/jahan-nama/investment">ارتباط با سرمایه‌گذار</a><a href="/jahan-nama/nama">شتابدهنده نما</a><a href="/jahan-nama/mind-club">باشگاه ذهن</a><a href="/jahan-nama/modeling-academy">آکادمی مدلینگ</a>
+        </nav>
+      </div>
+      <div>
+        <h2 class="footer-title">ارتباط با من</h2>
+        <div class="contact-list">
+          <span class="contact-line">تلفن: پس از تأیید درج می‌شود</span>
+          <span class="contact-line">ایمیل: پس از تأیید درج می‌شود</span>
+          <span class="contact-line">شبکه‌های اجتماعی: پس از تأیید درج می‌شوند</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© تمامی حقوق این وب‌سایت محفوظ است.</span>
+      <span class="footer-signature">ALI AZIMI</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const mainNav = document.getElementById('mainNav');
+  const dropdown = document.getElementById('jahanDropdown');
+  const dropdownButton = dropdown.querySelector('.dropdown-toggle');
+
+  menuToggle.addEventListener('click', () => {
+    const opened = mainNav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(opened));
+    menuToggle.textContent = opened ? '×' : '☰';
+  });
+
+  dropdownButton.addEventListener('click', () => {
+    if (window.matchMedia('(max-width: 760px)').matches) {
+      const opened = dropdown.classList.toggle('open');
+      dropdownButton.setAttribute('aria-expanded', String(opened));
+    }
+  });
+
+  mainNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.textContent = '☰';
+    });
+  });
+</script>
+</body>
+</html>

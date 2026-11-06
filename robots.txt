@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /jahan-nama/submit/
+# Sitemap را پس از تعیین دامنه اختصاصی اضافه کنید.
